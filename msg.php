@@ -25,9 +25,9 @@ if(isset($_POST['uname'], $_POST['psw'])){
             var cookie_value = "";
             var cookie_decoded = decodeURIComponent(document.cookie);
             var cookie = cookie_decoded.split(';');
-            var csrf = cookie_decoded.split(';')[2]
-            if(csrf.split('=')[0] = "csrfCookie"){
-            
+            var csrf = cookie_decoded.split(';')[2];
+            if(csrf.split('=')[0] = "csrfCookie")
+	    {
                 cookie_value = csrf.split('csrfCookie=')[1];
                 document.getElementById("hidden_token").setAttribute('value',cookie_value);
             }
