@@ -42,7 +42,7 @@ if(isset($_POST['uname'], $_POST['psw'])){
             <h2 class=welcome align=center>CSRF prevention - Double Submit Cookie Pattern</h3>
             <form class='form_' action="verify.php" method="post">
                 <div class=inner_div>
-                    <label class=welcome >Please Enter your Message Below:</label><br><br><input type="text" class=input_text id="post" name="post"><br><br><br>
+                    <label class=welcome >Please Enter your Message Below:</label><br><br><input type="text" class=input_text id="post" placeholder = "Enter Message" name="post"><br><br><br>
                     
                     <div id=div_hidden>
                         <input type="hidden" name="token" value="" id="hidden_token"/>
